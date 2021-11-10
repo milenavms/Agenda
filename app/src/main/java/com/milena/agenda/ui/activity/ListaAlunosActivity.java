@@ -1,24 +1,24 @@
-package com.milena.agenda;
+package com.milena.agenda.ui.activity;
 
-import android.app.Activity;
-import android.app.AppComponentFactory;
 import android.os.Bundle;
-import android.view.View;
+
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.milena.agenda.R;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class ListaAlunosActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_lista_alunos);
         setTitle("Lista de Alunos"); //Título da AppBar
 
         //criando a lista de alunos
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 );
 
         //Pego os id da lista de aluno estática no layout
-        ListView listaDeAlunos = findViewById(R.id.activity_main_lista_de_alunos);
+        ListView listaDeAlunos = findViewById(R.id.activity_lista_alunos_listview);
         //pegando os dados da lista e add / renderizando em uma View desejada
         listaDeAlunos.setAdapter(new ArrayAdapter<>(
                 this,
