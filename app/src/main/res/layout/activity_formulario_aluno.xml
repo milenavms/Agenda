@@ -12,19 +12,20 @@
         android:hint="Nome:"
         android:inputType="textCapWords"/>  <!--textCapWords: palavras do teclado com primeira letra maiuscula -->
 
-    <!--    campo -->
+    <!--    campo telefone -->
     <EditText android:id="@+id/activity_formulario_aluno_telefone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:hint="Telefone:"
-        android:inputType="phone"/>
-    <!--    campo -->
+        android:inputType="phone"/> <!--textCapWords: teclado númerico -->
+    <!--    campo e-mail-->
     <EditText android:id="@+id/activity_formulario_aluno_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:hint="E-mail:"/>
+
     <Button android:id="@+id/activity_fomulario_aluno_button_salvar_aluno"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
