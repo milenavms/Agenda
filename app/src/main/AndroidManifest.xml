@@ -3,22 +3,16 @@
     package="com.milena.agenda">
 
     <application>
-        <activity android:name="com.milena.agenda.ui.activity.FormularioAlunoActivity" android:theme="@style/Theme.AppCompat.Light">
+        <activity android:name="com.milena.agenda.ui.activity.FormularioAlunoActivity" android:theme="@style/Theme.AppCompat.Light"/>
+
+        <activity
+            android:name="com.milena.agenda.ui.activity.ListaAlunosActivity"
+            android:theme="@style/Theme.AppCompat.Light">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <activity
-            android:name="com.milena.agenda.ui.activity.ListaAlunosActivity"
-            android:theme="@style/Theme.AppCompat.Light">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
         </activity>
 
     </application>
