@@ -26,8 +26,7 @@ public class ListaAlunosActivity extends AppCompatActivity {
         setContentView(R.layout.activity_lista_alunos);
         setTitle("Lista de Alunos"); //Título da AppBar
 
-        //pegando a lista de Alunos
-        AlunoDAO dao = new AlunoDAO();
+
 
         //Botão
         FloatingActionButton botaoNovoAluno = findViewById(R.id.activity_lista_alunos_fab_novo_aluno);
@@ -39,6 +38,20 @@ public class ListaAlunosActivity extends AppCompatActivity {
             }
         });
 
+
+
+
+
+    }
+
+    //ciclo de vida onResume
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        //pegando a lista de Alunos
+        AlunoDAO dao = new AlunoDAO();
+
         //Pego os id da lista de aluno estática no layout
         ListView listaDeAlunos = findViewById(R.id.activity_lista_alunos_listview);
 
@@ -48,10 +61,5 @@ public class ListaAlunosActivity extends AppCompatActivity {
                 android.R.layout.simple_list_item_1, //com o adapter podemos criar uma lista de acordo com o numero de dados da nossa lista
                 dao.todos()));
 
-
-
-
     }
-
-
 }
