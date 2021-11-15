@@ -26,11 +26,16 @@
         android:layout_margin="8dp"
         android:hint="E-mail:"/>
 
-    <Button android:id="@+id/activity_fomulario_aluno_button_salvar_aluno"
+    <Button
+        android:id="@+id/activity_fomulario_aluno_button_salvar_aluno"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
+        android:background="#3F51B5"
+        android:inputType="textEmailAddress"
+        android:shadowColor="#DD3737"
         android:text="Salvar"
-        android:inputType="textEmailAddress"/>
+        android:textColor="#ffffff"
+        />
 
 </LinearLayout>
